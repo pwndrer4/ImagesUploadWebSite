@@ -11,7 +11,7 @@ $(function(){
 		
 		maxfiles: 5,
     	maxfilesize: 2,
-		url: 'post_file.php',
+		url: 'https://www.imagebed.eu.org/post_file.php',
 		uploadFinished:function(i,file,response){
 			$.data(file).addClass('done');
 			// response is the JSON object that post_file.php returns
