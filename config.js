@@ -3,4 +3,4 @@
  */
 
 //配置域名
-var domain = "imagebed.eu.org"; //填写你网站的域名。不要加http等协议名。例如：imagesDemo.jumppo.com
+var domain = "www.imagebed.eu.org"; //填写你网站的域名。不要加http等协议名。例如：imagesDemo.jumppo.com
