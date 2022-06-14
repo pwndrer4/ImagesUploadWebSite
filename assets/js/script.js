@@ -10,8 +10,8 @@ $(function(){
 		paramname:'pic',
 		
 		maxfiles: 5,
-    	maxfilesize: 2,
-		url: 'https://www.imagebed.eu.org/post_file.php',
+    	maxfilesize: 10,
+		url: 'post_file.php',
 		uploadFinished:function(i,file,response){
 			$.data(file).addClass('done');
 			// response is the JSON object that post_file.php returns
@@ -107,7 +107,7 @@ $(function(){
 //显示图片上传成功
 var uploadSucceed = function(name){
     var imageUrl = domain + "/uploads/"+ name;
-    var wwwUrl = "http://"+ imageUrl;
+    var wwwUrl = "https://"+ imageUrl;
     $(".succeed").show();
     $(".imgname").find("b").text(name);
     $(".imgurl").find("b").html("<a href='"+wwwUrl+"' target='_blank'>"+wwwUrl+"</a>");
